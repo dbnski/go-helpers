@@ -30,7 +30,7 @@ func HexifyBytes(o []byte, b []byte) []byte {
         o[j+2] = hexChars[v>>4]
         o[j+3] = hexChars[v&0x0F]
 
-        if i < size - 1 {
+        if i < len(b) - 1 {
             o[j+4] = ' '
         }
         j += 5
